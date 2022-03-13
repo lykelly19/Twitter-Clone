@@ -59,15 +59,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="tweetCell" rowHeight="174" id="yey-Jb-f6h">
-                                <rect key="frame" x="0.0" y="44.5" width="414" height="174"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="tweetCell" rowHeight="172" id="yey-Jb-f6h" customClass="TweetCellTableViewCell" customModule="Twitter" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="172"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yey-Jb-f6h" id="jkg-Hq-L76">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="174"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="172"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="j2x-IJ-TfQ">
-                                            <rect key="frame" x="20" y="11" width="137" height="152"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j2x-IJ-TfQ">
+                                            <rect key="frame" x="20" y="11" width="86" height="91"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="65" id="4KM-jK-c8U"/>
                                                 <constraint firstAttribute="height" constant="65" id="5l3-Er-Ttc"/>
@@ -75,35 +75,39 @@
                                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="65" id="t61-5S-e67"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="John Doe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FdW-27-ieh">
-                                            <rect key="frame" x="165" y="11" width="81" height="22"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tweet content" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Kj-wm-UO3">
+                                            <rect key="frame" x="114" y="25" width="229" height="122"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="22" id="Po1-Z9-OaG"/>
+                                                <constraint firstAttribute="height" constant="122" id="Mcu-gU-1AP"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Kj-wm-UO3">
-                                            <rect key="frame" x="165" y="37" width="229" height="126"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="John Doe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FdW-27-ieh">
+                                            <rect key="frame" x="114" y="11" width="81" height="24"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="1Kj-wm-UO3" firstAttribute="leading" secondItem="j2x-IJ-TfQ" secondAttribute="trailing" constant="8" id="1fS-nc-rv5"/>
-                                        <constraint firstItem="j2x-IJ-TfQ" firstAttribute="top" secondItem="jkg-Hq-L76" secondAttribute="topMargin" id="3nN-se-GTS"/>
+                                        <constraint firstItem="j2x-IJ-TfQ" firstAttribute="top" secondItem="FdW-27-ieh" secondAttribute="top" id="1jV-tc-4sO"/>
                                         <constraint firstItem="FdW-27-ieh" firstAttribute="leading" secondItem="1Kj-wm-UO3" secondAttribute="leading" id="8gA-a7-xPT"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="j2x-IJ-TfQ" secondAttribute="bottom" id="9sZ-eq-JLr"/>
                                         <constraint firstItem="1Kj-wm-UO3" firstAttribute="top" secondItem="FdW-27-ieh" secondAttribute="bottom" constant="4" id="CXS-Fk-IQ3"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="j2x-IJ-TfQ" secondAttribute="trailing" constant="237" id="Dij-jX-HWg"/>
                                         <constraint firstItem="1Kj-wm-UO3" firstAttribute="trailing" secondItem="jkg-Hq-L76" secondAttribute="trailingMargin" id="NdL-oV-Xup"/>
                                         <constraint firstItem="1Kj-wm-UO3" firstAttribute="bottom" secondItem="jkg-Hq-L76" secondAttribute="bottomMargin" id="QRs-j1-T31"/>
                                         <constraint firstItem="j2x-IJ-TfQ" firstAttribute="leading" secondItem="jkg-Hq-L76" secondAttribute="leadingMargin" id="aHE-Vi-HGL"/>
                                         <constraint firstItem="FdW-27-ieh" firstAttribute="top" secondItem="jkg-Hq-L76" secondAttribute="topMargin" id="iv4-Iq-sPr"/>
+                                        <constraint firstItem="FdW-27-ieh" firstAttribute="leading" secondItem="j2x-IJ-TfQ" secondAttribute="trailing" constant="8" symbolic="YES" id="sgU-7M-hnv"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="profileImageView" destination="j2x-IJ-TfQ" id="E8y-pN-b7y"/>
+                                    <outlet property="tweetContent" destination="1Kj-wm-UO3" id="YNW-Z4-bXo"/>
+                                    <outlet property="userNameLabel" destination="FdW-27-ieh" id="b72-dZ-qgw"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
