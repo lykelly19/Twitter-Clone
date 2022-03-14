@@ -25,5 +25,5 @@ Here's a walkthrough of implemented user stories:
 <br>
 <img src='https://i.imgur.com/ZS2r4qf.gif' title='Video Walkthrough' width='250' alt='Video Walkthrough' />
 
-The walkthrough starts with logging in, authorizing the app, scrolling through the tweets, showing the infinite scrolling, attempting to refresh, closing out the app and opening it again (user stays logged in across restarts), and logging out
+The walkthrough starts with showing the stylized launch screen, logging in, authorizing the app, scrolling through the tweets, showing the infinite scrolling, attempting to refresh, closing out the app, showing the app icon on the home screen, and opening it again with the stylized launch screen (user stays logged in across restarts), and logging out
 
