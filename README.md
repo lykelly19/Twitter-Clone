@@ -1,27 +1,29 @@
-# Project 3 - *Name of App Here*
+# Project 3 - *Twitter Clone*
 
-**Name of your app** is a basic twitter app to read your tweets.
+**Twitter Clone** is a basic twitter app to read your tweets.
 
-Time spent: **X** hours spent in total
+Time spent: **7** hours spent in total
 
 ## User Stories
 
 The following **required** functionality is completed:
 
-- [ ] User sees app icon in home screen and styled launch screen. (1pt)
-- [ ] User can log in. (1pt)
-- [ ] User can log out. (1pt)
-- [ ] User stays logged in across restarts. (1pt)
-- [ ] User can view tweets with the user profile picture, username, and tweet text. (6pts)
+- [X] User sees app icon in home screen and styled launch screen. (1pt)
+- [X] User can log in. (1pt)
+- [X] User can log out. (1pt)
+- [X] User stays logged in across restarts. (1pt)
+- [X] User can view tweets with the user profile picture, username, and tweet text. (6pts)
 
 The following **bonus** features are implemented:
 
-- [ ] User can pull to refresh. (1pt)
-- [ ] User can load past tweets infinitely. (2pts)
+- [X] User can pull to refresh. (1pt)
+- [X] User can load past tweets infinitely. (2pts)
 
 ## Video Walkthrough
 
-Here's a walkthrough of implemented user stories:
+Here's a walkthrough of implemented user stories:   
+<br>
+<img src='https://i.imgur.com/ZS2r4qf.gif' title='Video Walkthrough' width='250' alt='Video Walkthrough' />
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+The walkthrough starts with logging in, authorizing the app, scrolling through the tweets, showing the infinite scrolling, attempting to refresh, closing out the app and opening it again (user stays logged in across restarts), and logging out
 
