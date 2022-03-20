@@ -25,7 +25,7 @@ Here's a walkthrough of implemented user stories:
 <img src='https://i.imgur.com/oUrX7jC.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 
-Please note that the GIF is about 1 minute in length
+Please note that the GIF is about 1 minute in length and it takes a moment for the new tweet to appear on the feed.
 
 
 
