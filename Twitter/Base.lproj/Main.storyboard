@@ -76,7 +76,7 @@
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tweet content" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="190" translatesAutoresizingMaskIntoConstraints="NO" id="1Kj-wm-UO3">
-                                            <rect key="frame" x="114" y="25" width="250" height="127"/>
+                                            <rect key="frame" x="114" y="25" width="272" height="93"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="122" id="Mcu-gU-1AP"/>
                                             </constraints>
@@ -90,19 +90,8 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2hn-NN-X9F">
-                                            <rect key="frame" x="352" y="106" width="30" height="44"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="30" id="qsh-Es-UJN"/>
-                                            </constraints>
-                                            <state key="normal" title="Button"/>
-                                            <buttonConfiguration key="configuration" style="plain" image="favor-icon"/>
-                                            <connections>
-                                                <action selector="favoriteTweet:" destination="yey-Jb-f6h" eventType="touchUpInside" id="v2w-cH-loy"/>
-                                            </connections>
-                                        </button>
-                                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mzF-Fq-VYg">
-                                            <rect key="frame" x="309" y="113" width="30" height="30"/>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mzF-Fq-VYg">
+                                            <rect key="frame" x="292" y="110" width="30" height="30"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="30" id="XNt-cw-siz"/>
                                                 <constraint firstAttribute="height" constant="30" id="hUm-mo-0Nh"/>
@@ -113,19 +102,32 @@
                                                 <action selector="retweet:" destination="yey-Jb-f6h" eventType="touchUpInside" id="IHq-gV-ZHJ"/>
                                             </connections>
                                         </button>
+                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2hn-NN-X9F">
+                                            <rect key="frame" x="330" y="94" width="89" height="61"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="89" id="jMV-Bh-lRT"/>
+                                            </constraints>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" image="favor-icon"/>
+                                            <connections>
+                                                <action selector="favoriteTweet:" destination="yey-Jb-f6h" eventType="touchUpInside" id="v2w-cH-loy"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="j2x-IJ-TfQ" firstAttribute="top" secondItem="FdW-27-ieh" secondAttribute="top" id="1jV-tc-4sO"/>
                                         <constraint firstItem="FdW-27-ieh" firstAttribute="leading" secondItem="1Kj-wm-UO3" secondAttribute="leading" id="8gA-a7-xPT"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="2hn-NN-X9F" secondAttribute="trailing" constant="10" id="B52-l9-oUU"/>
                                         <constraint firstItem="1Kj-wm-UO3" firstAttribute="top" secondItem="FdW-27-ieh" secondAttribute="bottom" constant="4" id="CXS-Fk-IQ3"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="j2x-IJ-TfQ" secondAttribute="trailing" constant="237" id="Dij-jX-HWg"/>
                                         <constraint firstItem="1Kj-wm-UO3" firstAttribute="trailing" secondItem="jkg-Hq-L76" secondAttribute="trailingMargin" id="NdL-oV-Xup"/>
-                                        <constraint firstItem="1Kj-wm-UO3" firstAttribute="bottom" secondItem="jkg-Hq-L76" secondAttribute="bottomMargin" id="QRs-j1-T31"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="1Kj-wm-UO3" secondAttribute="bottom" constant="21" id="ZNe-mn-43a"/>
                                         <constraint firstItem="j2x-IJ-TfQ" firstAttribute="leading" secondItem="jkg-Hq-L76" secondAttribute="leadingMargin" id="aHE-Vi-HGL"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="2hn-NN-X9F" secondAttribute="bottom" constant="10" id="b19-yL-yMh"/>
-                                        <constraint firstItem="mzF-Fq-VYg" firstAttribute="bottom" secondItem="jkg-Hq-L76" secondAttribute="bottomMargin" constant="10" id="chm-SN-uOQ"/>
+                                        <constraint firstAttribute="bottom" secondItem="mzF-Fq-VYg" secondAttribute="bottom" constant="10" id="aIy-en-jXl"/>
+                                        <constraint firstItem="2hn-NN-X9F" firstAttribute="top" secondItem="jkg-Hq-L76" secondAttribute="topMargin" constant="92" id="bJQ-ds-UAX"/>
                                         <constraint firstItem="FdW-27-ieh" firstAttribute="top" secondItem="jkg-Hq-L76" secondAttribute="topMargin" id="iv4-Iq-sPr"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="2hn-NN-X9F" secondAttribute="trailing" constant="-27" id="kv4-f5-MYJ"/>
+                                        <constraint firstItem="2hn-NN-X9F" firstAttribute="leading" secondItem="mzF-Fq-VYg" secondAttribute="trailing" constant="10" id="rrQ-1Q-qDA"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="2hn-NN-X9F" secondAttribute="bottom" constant="-25" id="s2g-Bv-fSc"/>
                                         <constraint firstItem="FdW-27-ieh" firstAttribute="leading" secondItem="j2x-IJ-TfQ" secondAttribute="trailing" constant="8" symbolic="YES" id="sgU-7M-hnv"/>
                                     </constraints>
                                 </tableViewCellContentView>
